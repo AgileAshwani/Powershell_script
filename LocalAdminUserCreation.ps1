@@ -1,3 +1,4 @@
+param([string]$Password)
 # where do you want to create the local admin account?
 $ComputerName = $env:COMPUTERNAME
 # what is the name of the local admin group?
@@ -5,8 +6,6 @@ $ComputerName = $env:COMPUTERNAME
 $Group = 'Administrators'
 # what is the name of the new account?
 $Name = 'ServiceAdmin'
-# what is the password?
-$Password = 'topSecret123'
 # what is the description?
 $Description = 'Automatically generated local account'
 
